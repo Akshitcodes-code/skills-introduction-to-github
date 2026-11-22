@@ -60,6 +60,6 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow enable "Step 1"
+          gh workflow enable "1-create-a-branch.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
